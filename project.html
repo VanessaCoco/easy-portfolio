@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projetos</title>
+  <link rel="stylesheet" href="index.css" />
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .projects-section {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .projects-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .project-card {
+      background-color: #111;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,255,0,0.2);
+      transition: transform 0.2s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-title {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #5BBE42;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-desc {
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+
+    .project-link {
+      background-color: #5BBE42;
+      color: #000;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .project-link:hover {
+      background-color: #4ea739;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="contact.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="projects-section">
+    <h1>Meus Projetos</h1>
+    <div class="projects-container">
+      <div class="project-card">
+        <div class="project-title">Sistema de Cadastro</div>
+        <div class="project-desc">Aplicação web para cadastro e gerenciamento de usuários com interface intuitiva.</div>
+        <a href="#" class="project-link">Ver mais</a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-title">Portfólio Pessoal</div>
+        <div class="project-desc">Site responsivo criado para apresentar meus trabalhos e habilidades.</div>
+        <a href="#" class="project-link">Ver mais</a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-title">App de Tarefas</div>
+        <div class="project-desc">Aplicativo simples para organizar tarefas do dia a dia com alertas e notificações.</div>
+        <a href="#" class="project-link">Ver mais</a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
